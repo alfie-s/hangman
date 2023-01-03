@@ -1,0 +1,143 @@
+* {
+  box-sizing: border-box;
+}
+
+/* import font from google*/
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&display=swap');
+
+
+/* main background */
+body{
+  background-color: white;
+  color: grey;
+  font-family: 'Cabin Sketch', cursive;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+}
+
+.headerTitle {
+  margin: 25px 0 0;
+  font-size: 4rem;
+}
+
+.wrongLetterTitle p {
+  text-transform: uppercase;
+}
+
+.gameCont {
+  padding: 20px 30px;
+  position: relative;
+  margin: auto;
+  height: 350px;
+  width: 450px;
+}
+/* image container */
+.hangmanCont {
+  position: relative;
+}
+/* making images stack */
+.hangmanCont img {
+  position: absolute;
+  width: 200px;
+  height: 250px;
+}
+
+.wrongLettersCont {
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+
+.wrongLettersCont p {
+  margin: 0 0 5px;
+}
+
+.wrongLettersCont span {
+  font-size: 24px;
+}
+
+.word {
+  display: flex;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.letter {
+  border-bottom: 1px solid #6C5B7B;
+  display: inline-flex;
+  font-size: 30px;
+  align-items: center;
+  justify-content: center;
+  margin: 0 3px;
+  height: 50px;
+  width: 20px;
+}
+
+.popupCont {
+  background-color: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.popup {
+  background: white;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+}
+
+.popup button {
+  cursor: pointer;
+  background-color: #fff;
+  font-family: 'Cabin Sketch', cursive;
+  color: black;
+  text-transform: uppercase;
+  border: 1px solid;
+  margin-top: 20px;
+  padding: 12px 20px;
+  font-size: 16px;
+}
+
+.popup button:hover {
+  background-color: #6C5B7B;
+  color: white;
+}
+
+.notification-container {
+  padding: 15px 20px;
+  position: absolute;
+  bottom: -50px;
+}
+
+.notification-container p {
+  margin: 0;
+}
+
+.notification-container.show {
+  transform: translateY(-50px);
+}
+
+.HowToCont{
+  position: absolute;
+  left: 15px;
+  top: 25px;
+
+}
+
+.HowTo{
+  text-align: left;
+}
